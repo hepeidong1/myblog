@@ -7,5 +7,5 @@ abstract: Abstract: Particle swarm optimization (PSO) is one of the most classic
 type: journal
 year: 2025/11
 pdf_url: /articles/article1/PDPSO.pdf
-code_url: /articles/article1/PDPSO.zip
+code_url: https://github.com/hepeidong1/MyBlog/blob/306a7897be862fe3cc05d8abc35f81c7f472ca91/articles/article1/PDPSO.zip
 supplementary_url: /articles/article1/Supplementary Material (PDPSO).docx
