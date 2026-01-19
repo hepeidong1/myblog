@@ -6,6 +6,10 @@
         <title>Ph.D. Student Blog - Xi'an University of Technology</title>
         <!-- Add Font Awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Add Google Fonts for cursive Blog icon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <style>
         * {
             margin: 0;
@@ -14,74 +18,107 @@
         }
         
         body {
-            font-family: 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-weight: 600;
+            color: #1a252f;
+            margin-bottom: 1rem;
         }
         
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 1rem 0;
+            background-color: #ffffff;
+            color: #1a252f;
+            padding: 0.5rem 0;
             text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        header p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 0;
         }
         
         nav {
-            background-color: #34495e;
-            padding: 0.5rem 0;
+            background-color: #ffffff;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .blog-icon {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #165dff;
+            font-weight: bold;
         }
         
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
-        }
-        
-        nav ul li {
-            margin: 0 1rem;
+            gap: 2rem;
         }
         
         nav ul li a {
-            color: white;
+            color: #2c3e50;
             text-decoration: none;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 4px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.95rem;
         }
         
         nav ul li a:hover {
-            background-color: #2c3e50;
+            background-color: #f0f4f8;
+            color: #165dff;
         }
         
         main {
             max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 3rem auto;
+            padding: 0 2rem;
         }
         
         .container {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 2.5rem;
         }
         
         /* Personal Information Section Styles */
         .personal-info {
             background-color: white;
-            padding: 3rem 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
             margin-bottom: 3rem;
             text-align: left;
+            border-left: 4px solid #165dff;
         }
         
         .personal-header {
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            gap: 3rem;
-            margin-bottom: 2rem;
+            gap: 4rem;
+            margin-bottom: 3rem;
             flex-wrap: wrap;
         }
         
@@ -103,14 +140,15 @@
             height: 200px;
             border-radius: 0;
             object-fit: cover;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e0;
         }
         
         /* Contact Information Vertically Aligned */
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 1rem;
             align-items: flex-start;
             width: 100%;
         }
@@ -118,15 +156,21 @@
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            color: #555;
+            gap: 0.75rem;
+            color: #5a6c7d;
             text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            font-size: 1rem;
         }
         
         .contact-item:hover {
-            color: #3498db;
+            color: #165dff;
+            transform: translateX(4px);
+        }
+        
+        .contact-item i {
+            width: 18px;
+            text-align: center;
         }
         
         /* Right Section: Other Content */
@@ -141,36 +185,49 @@
         }
         
         .personal-details h2 {
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-            font-size: 2rem;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #1a252f;
         }
         
         .personal-title {
-            color: #3498db;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
+            color: #165dff;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-family: 'Arial', sans-serif;
         }
         
         .personal-intro {
-            color: #666;
+            color: #5a6c7d;
             line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
             margin-bottom: 1.5rem;
+            color: #2c3e50;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #165dff;
         }
         
         footer {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #ffffff;
+            color: #7f8c8d;
             text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid #e0e0e0;
         }
         
         @media (max-width: 768px) {
             .personal-header {
                 flex-direction: column;
                 text-align: center;
+                gap: 2rem;
             }
             
             .personal-details {
@@ -179,26 +236,36 @@
             
             .contact-info {
                 justify-content: center;
+                align-items: center;
             }
             
             .personal-avatar img {
-                width: 150px;
-                height: 150px;
+                width: 180px;
+                height: 180px;
+            }
+            
+            main {
+                padding: 0 1rem;
+            }
+            
+            .personal-info {
+                padding: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Student Blog</h1>
-        <p>Focused on research outcomes and resource sharing</p>
     </header>
     
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="blog-icon">Academic Blog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </div>
     </nav>
     
     <main>
@@ -336,6 +403,4 @@
         }
     </script>
 </body>
-
 </html>
-
