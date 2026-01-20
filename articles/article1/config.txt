@@ -8,4 +8,4 @@ type: journal
 year: 2025/11
 pdf_url: https://github.com/hepeidong1/MyBlog/raw/refs/heads/main/articles/article1/PDPSO.pdf
 code_url: https://github.com/hepeidong1/MyBlog/raw/refs/heads/main/articles/article1/PDPSO.zip
-supplementary_url: /articles/article1/Supplementary Material (PDPSO).docx
+supplementary_url: https://github.com/hepeidong1/MyBlog/raw/refs/heads/main/articles/article1/Supplementary Material (PDPSO).docx
